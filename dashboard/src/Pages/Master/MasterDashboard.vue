@@ -7,7 +7,9 @@
         </div>   
         </div>
            <div class="h-[calc(100vh-50px)] bg-gray-800">
-            Menu
+           <div class="px-[20px] flex flex-col">
+            <div>Home</div>
+           </div>
            </div>
         </div>
       
