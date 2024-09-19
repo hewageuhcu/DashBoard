@@ -8,7 +8,17 @@ const routed=[
         name:'Dashboard',
         path:'/',
         comonent:dashboard
-    }
+    },
+    {
+        name:'home',
+        path:'/home',
+        comonent:home
+    },
+    {
+        name:'profile',
+        path:'/profile',
+        comonent:profile
+    },
 ];
 const router = Router();
 export default router;
