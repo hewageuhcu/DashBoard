@@ -1,13 +1,13 @@
 import {createRouter,createWebHistory} from "vue-router";
-import dashboard from '../Pages/Master/dashboard.vue'
+import MasterDashboard from '../Pages/Master/MasterDashboard.vue'
 import home from '../Pages/home.vue'
 import profile from '../Pages/Profile.vue'
 
 const routed=[
     {
-        name:'Dashboard',
+        name:'MatserDashboard',
         path:'/',
-        comonent:dashboard
+        comonent:MasterDashboard
     },
     {
         name:'home',
