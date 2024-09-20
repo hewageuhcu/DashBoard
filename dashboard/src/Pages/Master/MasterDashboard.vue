@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen h-screen flex">
-        <div class="w-[400px] h-full bg-gray-200 text-white">
+        <div class="w-[400px] h-full bg-gray-200 text-white" v-show="showSide">
            <div class="h-[50px] bg-gray-900 flex justify-start items-center">
 <div class="px-[20px]">
             <h3 class="font-bold text-xl">Admin Dashboard</h3>
@@ -92,7 +92,7 @@ DOWNLOAD
     </router-link>
   </div>
 </form>
-<div class="w-[200px]">
+<div class="w-[200px] fixed top-1 right-4">
   <div class="flex items-center justify-start space-x-4" @click="toggleDrop">
  
     <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="https://thumbs.dreamstime.com/z/letter-se-logotype-design-company-name-colorful-swoosh-vector-logo-business-identity-204246122.jpg">
@@ -103,6 +103,20 @@ DOWNLOAD
       <div class="text-xs text-gray-500 dark:text-gray-400">Admin</div>
     </div>
   </div>
+  <div v-show="showDropDown" class="absolute right-[10px] z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+  <div class="py-1 text-left" role="none">
+  
+    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account Settings</a>
+    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+    
+ 
+    <form method="POST" action="#" role="none">
+      <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign Out</button>
+    </form>
+  </div>
+</div>
+
 </div>
 
 
@@ -111,8 +125,11 @@ DOWNLOAD
   </div>
 </div>
 
-           <div class="h-[calc(100vh-50px)] bg-white">
-Main
+           <div class="h-[calc(100vh-50px)] bg-gray-50 p-[20px]">
+
+<div class="border border-gray-300 rounded-md p-[20px] h-full">
+  <router-view></router-view>
+</div>
            </div>
         </div>
     </div>
@@ -120,9 +137,22 @@ Main
     
     <script>
     export default{
-    toggleSideBar(){
+      data(){
+return {
+  showDropDown:false,
+  showSide:true
+}
+      },
+      methods:{
+        toggleSideBar(){
+          this.showSide=!this.showSide
 
-    }
+},
+toggleDrop(){
+this.showDropDown=!this.showDropDown
+}
+      }
+    
     
     }
     </script>
