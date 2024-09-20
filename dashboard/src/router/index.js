@@ -7,18 +7,21 @@ const routed=[
     {
         name:'MatserDashboard',
         path:'/',
-        comonent:MasterDashboard
+        comonent:MasterDashboard,
+        children:[
+            {
+                name:'home',
+                path:'/home',
+                comonent:home
+            },
+            {
+                name:'profile',
+                path:'/profile',
+                comonent:profile
+            },
+        ]
     },
-    {
-        name:'home',
-        path:'/home',
-        comonent:home
-    },
-    {
-        name:'profile',
-        path:'/profile',
-        comonent:profile
-    },
+    
 ];
 const router = Router();
 export default router;
