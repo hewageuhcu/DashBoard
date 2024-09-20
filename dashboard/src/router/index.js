@@ -15,8 +15,8 @@ const routed=[
                 comonent:home
             },
             {
-                name:'profile',
-                path:'/profile',
+                name:'Profile',
+                path:'/Profile',
                 comonent:profile
             },
         ]
