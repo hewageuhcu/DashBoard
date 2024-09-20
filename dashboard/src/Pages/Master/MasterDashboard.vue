@@ -98,7 +98,7 @@ DOWNLOAD
     <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="https://thumbs.dreamstime.com/z/letter-se-logotype-design-company-name-colorful-swoosh-vector-logo-business-identity-204246122.jpg">
     
     
-    <div class="font-semibold dark:text-white text-left">
+    <div class="font-semibold dark:text-black text-left">
       <div>Chathurya, SE</div>
       <div class="text-xs text-gray-500 dark:text-gray-400">Admin</div>
     </div>
