@@ -95,7 +95,7 @@ DOWNLOAD
 <div class="w-[200px]">
   <div class="flex items-center justify-start space-x-4" @click="toggleDrop">
     <!-- Fixed img tag -->
-    <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="https://yt3.ggpht.com/hqsxh-Vnbw90K0_X4DAWh6RkmEUVnl-82SRCyh-">
+    <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="/logo.jpg">
     
     <!-- User Info -->
     <div class="font-semibold dark:text-white text-left">
