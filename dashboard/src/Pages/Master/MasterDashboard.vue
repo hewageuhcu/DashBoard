@@ -94,10 +94,10 @@ DOWNLOAD
 </form>
 <div class="w-[200px]">
   <div class="flex items-center justify-start space-x-4" @click="toggleDrop">
-    <!-- Fixed img tag -->
-    <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="/logo.jpg">
+ 
+    <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="https://thumbs.dreamstime.com/z/letter-se-logotype-design-company-name-colorful-swoosh-vector-logo-business-identity-204246122.jpg">
     
-    <!-- User Info -->
+    
     <div class="font-semibold dark:text-white text-left">
       <div>Chathurya, SE</div>
       <div class="text-xs text-gray-500 dark:text-gray-400">Admin</div>
