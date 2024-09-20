@@ -64,11 +64,16 @@ DOWNLOAD
         </div>
       
         <div class="w-full h-full bg-gray-400">
-            <div class="h-[50px] bg-gray-900">
-Header Sidebar
-           </div>
-           <div class="h-[calc(100vh-50px)] bg-white">
+          <div class="h-[50px] bg-gray-100 flex items-center shadow-sm px-[20px] w-full py-[10px] z-10 border-b">
+  <div class="cursor-pointer w-[30px]" @click="toggleSideBar">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[25px] h-[25px]">
+      <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96z"></path>
+    </svg>
+  </div>
+</div>
 
+           <div class="h-[calc(100vh-50px)] bg-white">
+Main
            </div>
         </div>
     </div>
