@@ -6,7 +6,7 @@
             <h3 class="font-bold text-xl">Admin Dashboard</h3>
         </div>   
         </div>
-           <div class="h-[calc(100vh-50px)] bg-gray-800">
+           <div class="h-[calc(100vh-50px)] bg-gray-700">
            <div class="px-[20px] flex flex-col justify-between space-y-[10px]">
             <br/>
            
@@ -57,22 +57,7 @@ SETTINGS
 DOWNLOAD
 </router-link>
 
-<div>
-    <div class="h-[50px]">
-        <div>
-            <router-link 
-  to="/home" 
-  class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
->
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7zM12 12v.01" />
-</svg>
 
- HELP
-</router-link>
-        </div>
-    </div>
-</div>
 
            </div>
            </div>
