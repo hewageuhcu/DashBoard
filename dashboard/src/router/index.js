@@ -1,7 +1,7 @@
 import {createRouter,createWebHistory} from "vue-router";
 import MasterDashboard from '../Pages/Master/MasterDashboard.vue'
 import home from '../Pages/home.vue'
-import profile from '../Pages/Profile.vue'
+import Profile from '../Pages/Profile.vue'
 
 const routed=[
     {
@@ -17,7 +17,7 @@ const routed=[
             {
                 name:'Profile',
                 path:'/Profile',
-                comonent:profile
+                comonent:Profile
             },
         ]
     },
