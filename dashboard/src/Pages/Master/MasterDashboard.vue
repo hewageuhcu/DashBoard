@@ -35,7 +35,7 @@
 <br/>
 
 <router-link 
-  to="/home" 
+  to="/MyHome" 
   class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
 >
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
@@ -46,7 +46,7 @@ SETTINGS
 </router-link>
 <br/>
 <router-link 
-  to="/home" 
+  to="/MyHome" 
   class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
 >
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
@@ -129,7 +129,9 @@ DOWNLOAD
            <div class="h-[calc(100vh-50px)] bg-gray-50 p-[20px]">
 
 <div class="border border-gray-300 rounded-md p-[20px] h-full">
-  <router-view></router-view>
+  <router-view>
+    
+  </router-view>
 </div>
            </div>
         </div>
