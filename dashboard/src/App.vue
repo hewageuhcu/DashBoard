@@ -1,18 +1,25 @@
 <template>
   
   <MasterDashboard />
+  <MyProfile/>
+  <MyHome/>
 </template>
 
 <script>
-import MasterDashboard from './Pages/Master/MasterDashboard.vue';
+import MasterDashboard from '@/Pages/Master/MasterDashboard.vue';
+import MyProfile from '@/Pages/MyProfile.vue';
+import MyHome from './Pages/MyHome.vue';
 
 export default {
   name: 'App',
   components: {
-    MasterDashboard
+    MasterDashboard,
+    MyProfile,
+    MyHome
   }
 }
 </script>
+
 
 <style>
 #app {

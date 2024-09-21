@@ -1,7 +1,7 @@
 import {createRouter,createWebHistory} from "vue-router";
 import MasterDashboard from '../Pages/Master/MasterDashboard.vue'
-import home from '../Pages/home.vue'
-import Profile from '../Pages/Profile.vue'
+import MyHome from '../Pages/MyHome.vue'
+import MyProfile from '../Pages/MyProfile.vue'
 
 const routed=[
     {
@@ -10,14 +10,14 @@ const routed=[
         comonent:MasterDashboard,
         children:[
             {
-                name:'home',
-                path:'/home',
-                comonent:home
+                name:'MyHome',
+                path:'/MyHome',
+                comonent:MyHome
             },
             {
-                name:'Profile',
-                path:'/Profile',
-                comonent:Profile
+                name:'MyProfile',
+                path:'/MyProfile',
+                comonent:MyProfile
             },
         ]
     },
