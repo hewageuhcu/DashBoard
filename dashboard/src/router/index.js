@@ -1,7 +1,10 @@
 import {createRouter,createWebHistory} from "vue-router";
 import MasterDashboard from '../Pages/Master/MasterDashboard.vue'
-import MyHome from '../Pages/MyHome.vue'
-import MyProfile from '../Pages/MyProfile.vue'
+import MyHome from '../Pages/MyHome.vue';
+import MyProfile from '../Pages/MyProfile.vue';
+import MySettings from "@/Pages/MySettings.vue";
+import MyDownload from "@/Pages/MyDownload.vue";
+
 
 const routed=[
     {
@@ -18,6 +21,16 @@ const routed=[
                 name:'MyProfile',
                 path:'/MyProfile',
                 comonent:MyProfile
+            },
+            {
+                name:'MyDownload',
+                path:'/MyDownload',
+                comonent:MyDownload
+            },
+            {
+                name:'MySettings',
+                path:'/MySettings',
+                comonent:MySettings
             },
         ]
     },
