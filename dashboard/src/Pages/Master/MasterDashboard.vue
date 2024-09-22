@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen h-screen flex">
-        <div class="w-[400px] h-full bg-gray-200 text-white">
+        <div class="w-[400px] h-full bg-gray-200 text-white" v-show="showSide">
            <div class="h-[50px] bg-gray-900 flex justify-start items-center">
 <div class="px-[20px]">
             <h3 class="font-bold text-xl">Admin Dashboard</h3>
@@ -11,7 +11,7 @@
             <br/>
            
             <router-link 
-  to="/home" 
+  to="Pages/home.vue" 
   class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
 >
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
@@ -23,15 +23,15 @@
 <br/>
 
 <router-link 
-  to="/home" 
+  to="/Profile" 
   class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
 >
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-</svg>
-
-PROFILE
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+  </svg>
+  PROFILE
 </router-link>
+
 <br/>
 
 <router-link 
@@ -64,7 +64,7 @@ DOWNLOAD
         </div>
       
         <div class="w-full h-full bg-gray-400">
-          <div class="h-[50px] bg-gray-100 flex items-center shadow-sm px-[20px] w-full py-[10px] z-10 border-b">
+          <div class="h-[50px] bg-gray-200 flex items-center shadow-sm px-[20px] w-full py-[10px] z-10 border-b">
   <div class="cursor-pointer w-[30px]" @click="toggleSideBar">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[25px] h-[25px]">
       <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96z"></path>
@@ -74,6 +74,7 @@ DOWNLOAD
     <form class="w-[calc(100%-200px)] flex justify-center">
       <form class="flex items-center w-[500px]">
   <label for="voice-search" class="sr-only">Search</label>
+  
   <div class="relative w-full">
 
     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -85,21 +86,51 @@ DOWNLOAD
   
     <input type="text" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
     
-   
-    <router-link to="/" class="flex absolute inset-y-0 right-0 items-center pr-3">
+   <router-link to="/" class="flex absolute inset-y-0 right-0 items-center pr-3">
       <svg aria-hidden="true" class="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0 5 5 0 01-5 5 1 1 0 102 0z" clip-rule="evenodd"></path>
       </svg>
     </router-link>
   </div>
 </form>
+<div class="w-[200px] fixed top-1 right-4">
+  <div class="flex items-center justify-start space-x-4" @click="toggleDrop">
+ 
+    <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="https://thumbs.dreamstime.com/z/letter-se-logotype-design-company-name-colorful-swoosh-vector-logo-business-identity-204246122.jpg">
+    
+    
+    <div class="font-semibold dark:text-black text-left">
+      <div>Chathurya, SE</div>
+      <div class="text-xs text-gray-500 dark:text-gray-400">Admin</div>
+    </div>
+  </div>
+  <div v-show="showDropDown" class="absolute right-[10px] z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+  <div class="py-1 text-left" role="none">
+  
+    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account Settings</a>
+    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">New Orders</a>
+    
+ 
+    <form method="POST" action="#" role="none">
+      <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign Out</button>
+    </form>
+  </div>
+</div>
+
+</div>
+
+
 
     </form>
   </div>
 </div>
 
-           <div class="h-[calc(100vh-50px)] bg-white">
-Main
+           <div class="h-[calc(100vh-50px)] bg-gray-50 p-[20px]">
+
+<div class="border border-gray-300 rounded-md p-[20px] h-full">
+  <router-view></router-view>
+</div>
            </div>
         </div>
     </div>
@@ -107,9 +138,22 @@ Main
     
     <script>
     export default{
-    toggleSideBar(){
+      data(){
+return {
+  showDropDown:false,
+  showSide:true
+}
+      },
+      methods:{
+        toggleSideBar(){
+          this.showSide=!this.showSide
 
-    }
+},
+toggleDrop(){
+this.showDropDown=!this.showDropDown
+}
+      }
+    
     
     }
     </script>
