@@ -98,7 +98,7 @@
         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0 5 5 0 01-5 5 1 1 0 102 0z" clip-rule="evenodd"></path>
       </svg>
     </router-link>
-  </div>
+  </div> 
 </form>
 <div class="w-[200px] fixed top-1 right-4">
   <div class="flex items-center justify-start space-x-4" @click="toggleDrop">
