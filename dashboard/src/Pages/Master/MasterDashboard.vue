@@ -10,51 +10,58 @@
            <div class="px-[20px] flex flex-col justify-between space-y-[10px]">
             <br/>
            
-            <router-link 
-  to="Pages/home.vue" 
-  class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
->
+            <router-link to="MyHome" 
+  class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300">
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M9 21V9h6v12" />
 </svg>
-
+<a href="../MyHome.vue">
   HOME
+</a>
+
 </router-link>
 <br/>
 
 <router-link 
-  to="/Profile" 
+  to="/MyProfile" 
   class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
 >
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
   </svg>
-  PROFILE
+  <a href="../MyProfile.vue">
+    PROFILE
+  </a>
+
 </router-link>
 
 <br/>
 
 <router-link 
-  to="/home" 
+  to="/MySettings" 
   class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
 >
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75A2.25 2.25 0 1012 14.25 2.25 2.25 0 0012 9.75zM19.5 12a7.5 7.5 0 01-.293 2.209l1.543 1.198a.75.75 0 01.165 1.05l-1.5 2.598a.75.75 0 01-1.05.165l-1.543-1.198a7.517 7.517 0 01-2.209.293 7.517 7.517 0 01-2.209-.293l-1.543 1.198a.75.75 0 01-1.05-.165l-1.5-2.598a.75.75 0 01.165-1.05l1.543-1.198A7.5 7.5 0 014.5 12a7.5 7.5 0 01.293-2.209L3.25 8.593a.75.75 0 01-.165-1.05l1.5-2.598a.75.75 0 011.05-.165l1.543 1.198A7.517 7.517 0 0112 4.5a7.517 7.517 0 012.209.293l1.543-1.198a.75.75 0 011.05.165l1.5 2.598a.75.75 0 01-.165 1.05l-1.543 1.198A7.5 7.5 0 0119.5 12z"/>
 </svg>
+<a href="../MySettings.vue">
+  SETTINGS
+</a>
 
-SETTINGS
 </router-link>
 <br/>
 <router-link 
-  to="/home" 
+  to="/MyDownload" 
   class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
 >
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2.5A1.5 1.5 0 005.5 20h13a1.5 1.5 0 001.5-1.5V16m-6-8v10m0 0l-4-4m4 4l4-4" />
 </svg>
 
+<a href="../MyDownload.vue">
+  DOWNLOAD
+</a>
 
-DOWNLOAD
 </router-link>
 
 
@@ -82,8 +89,8 @@ DOWNLOAD
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zm-6 4a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.817-4.817A6 6 0 012 8z" clip-rule="evenodd"></path>
       </svg>
     </div>
+     
     
-  
     <input type="text" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
     
    <router-link to="/" class="flex absolute inset-y-0 right-0 items-center pr-3">
@@ -91,7 +98,7 @@ DOWNLOAD
         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0 5 5 0 01-5 5 1 1 0 102 0z" clip-rule="evenodd"></path>
       </svg>
     </router-link>
-  </div>
+  </div> 
 </form>
 <div class="w-[200px] fixed top-1 right-4">
   <div class="flex items-center justify-start space-x-4" @click="toggleDrop">
@@ -129,7 +136,9 @@ DOWNLOAD
            <div class="h-[calc(100vh-50px)] bg-gray-50 p-[20px]">
 
 <div class="border border-gray-300 rounded-md p-[20px] h-full">
-  <router-view></router-view>
+  <router-view>
+
+  </router-view>
 </div>
            </div>
         </div>
