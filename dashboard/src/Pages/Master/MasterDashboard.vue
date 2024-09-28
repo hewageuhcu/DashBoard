@@ -45,7 +45,7 @@
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75A2.25 2.25 0 1012 14.25 2.25 2.25 0 0012 9.75zM19.5 12a7.5 7.5 0 01-.293 2.209l1.543 1.198a.75.75 0 01.165 1.05l-1.5 2.598a.75.75 0 01-1.05.165l-1.543-1.198a7.517 7.517 0 01-2.209.293 7.517 7.517 0 01-2.209-.293l-1.543 1.198a.75.75 0 01-1.05-.165l-1.5-2.598a.75.75 0 01.165-1.05l1.543-1.198A7.5 7.5 0 014.5 12a7.5 7.5 0 01.293-2.209L3.25 8.593a.75.75 0 01-.165-1.05l1.5-2.598a.75.75 0 011.05-.165l1.543 1.198A7.517 7.517 0 0112 4.5a7.517 7.517 0 012.209.293l1.543-1.198a.75.75 0 011.05.165l1.5 2.598a.75.75 0 01-.165 1.05l-1.543 1.198A7.5 7.5 0 0119.5 12z"/>
 </svg>
 <a href="../MySettings.vue">
-  SETTINGS
+  SETTINGS           
 </a>
 
 </router-link>
@@ -67,8 +67,8 @@
 
 
            </div>
-           </div>
-        </div>
+           </div> 
+        </div>   
       
         <div class="w-full h-full bg-gray-400">
           <div class="h-[50px] bg-gray-200 flex items-center shadow-sm px-[20px] w-full py-[10px] z-10 border-b">
@@ -96,7 +96,7 @@
    <router-link to="/" class="flex absolute inset-y-0 right-0 items-center pr-3">
       <svg aria-hidden="true" class="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0 5 5 0 01-5 5 1 1 0 102 0z" clip-rule="evenodd"></path>
-      </svg>
+      </svg>  
     </router-link>
   </div> 
 </form>
