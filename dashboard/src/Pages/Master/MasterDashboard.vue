@@ -67,8 +67,8 @@
 
 
            </div>
-           </div>
-        </div>
+           </div> 
+        </div>   
       
         <div class="w-full h-full bg-gray-400">
           <div class="h-[50px] bg-gray-200 flex items-center shadow-sm px-[20px] w-full py-[10px] z-10 border-b">
